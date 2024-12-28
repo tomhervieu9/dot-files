@@ -8,6 +8,7 @@
   "explorer.confirmDragAndDrop": false,
   "solidity.telemetry": true,
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
   "git.confirmSync": false,
   "git.autofetch": true,
   "github.copilot.enable": {
@@ -20,15 +21,36 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "keyword.operator",
+        "scope": "variable",
         "settings": {
-          "foreground": "#ffffff"  // Example: setting operators to red
+          "foreground": "#0ecce9"  // Example: setting variables to white
         }
       },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#f0ff9c"  // Example: setting strings to green
+        }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#ff7ff9"  // Example: setting functions to purple
+        }
+      }
     ],
     "comments": "#31ff87ad",
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
